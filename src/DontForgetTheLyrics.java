@@ -20,13 +20,16 @@ public class DontForgetTheLyrics {
 	
 	public static void main(String[] args) {
 		// 4. Make a pop-up to explain the game.
-
+JOptionPane.showMessageDialog(null,"So what is going to happen is i'm going to play a piece from a song and you are going to guess the rest of the words");
 		// 5. Use the playSound method to play your song.
-
+playSound("Queen.wav");
 		// 6. Make a pop-up for the player to type their answer.
 
+String guess = JOptionPane.showInputDialog("Put in your guess");
 		// 7. If they answered correctly, tell them that they were right.
-
+if (guess.equals("pushing down on you")) { JOptionPane.showMessageDialog(null, "Correct :)");
+	
+}else { JOptionPane.showMessageDialog(null, "Wrong it was pushing down on you");}
 		// 8. Otherwise, tell them they are wrong, and give them the answer.
 
 		// 9. Record another sound and repeat steps 5-8.

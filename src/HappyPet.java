@@ -5,25 +5,55 @@ public class HappyPet {
 	// 2. Add the following variable to the next line: static int happinessLevel = 0;
 	// this will be used to store the happiness of your pet
 	
+	static int happinessLevel = 0;
 	public static void main(String[] args) {
 		// 1. Ask the user what kind of pet they want to buy, and store their answer in a variable
+String pet =JOptionPane.showInputDialog("What pet do you want to buy?");
 
 		// 7. REPEAT steps 3 - 6 enough times to make your pet happy!
+		for (int i = 1; i <6 ; i++) {
+			
 		
 			// 3. Use showOptionDialog to ask the user what they want to do to make their pet happy
 			//    (eg: cuddle, food, water, take a walk, groom, clean up poop).
 			//    Make sure to customize the title and question too.
-			int task = JOptionPane.showOptionDialog(null, "Question", "Title", 0, JOptionPane.INFORMATION_MESSAGE, null,
-					new String[] { "Button1", "Button2", "Button3" }, null);
 
-			// 5. Use user input to call the appropriate method created in step 4.
+			int task = JOptionPane.showOptionDialog(null, "Ways to get a happy pet", "Happy Pet", 0, JOptionPane.INFORMATION_MESSAGE, null,
+					new String[] { "walk", "feed", "cuddle" }, null);
+
+if (task==0) {  walk();
+	
+}
+//System.out.println(task);
+if (task==2) {  cuddle();
+	
+}//System.out.println(task);
+if (task==1) {  feed();
+	
+}	
+System.out.println(happinessLevel);	
+// 5. Use user input to call the appropriate method created in step 4.
 
 			// 6. If you determine the happiness level is large enough, tell the
-			//    user that he loves his pet and use break; to exit for loop.
-
+			//    user that he loves his pet and use break; to exit for loo
+if (happinessLevel>=40) {JOptionPane.showMessageDialog(null,"You love your pet very much ");
+break;
+}
+}
 	}
 
-	// 4. Create methods to handle each of your user selections.
+	 static // 4. Create methods to handle each of your user selections.
 	//    Each method should create a pop-up with the pet's response (eg. cat might purr when pet), 
 	//    and INCREMENT the pet's happiness Level.
+	void walk() {
+		JOptionPane.showMessageDialog(null, "hi");
+		JOptionPane.showMessageDialog(null, "Your pet got 2 happiness points");
+		 happinessLevel +=2;
+	}static void cuddle(){
+		JOptionPane.showMessageDialog(null,"your pet got 15 happiness points");
+		happinessLevel +=15;
+	}static void feed(){
+		JOptionPane.showMessageDialog(null,"your pet got 10 happiness points");
+		happinessLevel +=10;
+	}
 }
