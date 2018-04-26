@@ -27,11 +27,11 @@ if (vacation==0) {
 	isVacation  =true;
 }if (vacation==1) {
 	isVacation =false;
-}if(isVacation||!isWeekday);{
+}if(isVacation||!isWeekday){
 	System.out.println("sleep in"); 
 }else if(isWeekday&&isVacation){
 	System.out.println("sleep in");
-}else isWeekday&&!isVacation;{
+}else if (isWeekday&&!isVacation){
 	System.out.println("get up!");
 }
         /*
