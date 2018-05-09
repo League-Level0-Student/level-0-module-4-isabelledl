@@ -6,6 +6,8 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class PiAloud {
+public static void main(String[] args) {
+}  
 
 	// 1. Make a main method and make sure your program can run
 
@@ -44,6 +46,6 @@ public class PiAloud {
 		return scanner.next().toCharArray()[0];
 	}
 
-}
 
+}
 
