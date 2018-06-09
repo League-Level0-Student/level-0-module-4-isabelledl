@@ -33,13 +33,34 @@ public class Adventure {
 			} else if (jump == 0) {
 				JOptionPane.showMessageDialog(null,
 						"Ooh when your owner named Ray came home he was so mad that he put out side for 1 day did you really have to do that.");
-
 			}
-			if (where == 2) {
+		} else if (where == 1) {
+			JOptionPane.showMessageDialog(null, cat + " walked inside and saw your owner Ray looking at the TV");
 
-			}
+		
+		int something = JOptionPane.showOptionDialog(null,
+				"Do you want " + cat + " to see what Ray is doing or go find something better to do? ", cat, 0,
+				JOptionPane.INFORMATION_MESSAGE, null,
+				new String[] { "find something better to do I don't care what Ray dose", "see what Ray is doing" },
+				null);
+		if (something == 0) {
+			JOptionPane.showMessageDialog(null, cat + " walked away and you saw the dog named Pi ");
 
+		
+		int dog = JOptionPane.showOptionDialog(null,
+				"Do you want " + cat + " to go play with Pi or go find your cat friends?", cat, 0,
+				JOptionPane.INFORMATION_MESSAGE, null,
+				new String[] { "Eew I hate dogs I will go find my friends", "I love dogs I will go play with Pi" },
+				null);
+		if (dog == 0) {
+			JOptionPane.showMessageDialog(null, cat
+					+ " walked outsid and jumped on to the roof and found you cat friends Facebook,Twiter,and Instagram");} 
+			else if (dog==1) {JOptionPane.showMessageDialog(null, cat +" played with Pi for the rest of the day");
+				
+			
 		}
-
+		}
+		
+	}
 	}
 }
