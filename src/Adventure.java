@@ -57,14 +57,27 @@ public class Adventure {
 				JOptionPane.showMessageDialog(null, cat + " played with Pi for the rest of the day");
 			}
 
-		}else if (where == 3) {
-			JOptionPane.showMessageDialog(null, cat + "jbfjefne");}
+		} else if (where == 3) {
+			JOptionPane.showMessageDialog(null, cat
+					+ " walked outside and saw a hole in the ground do you want to see what is in the hole or do something else?");
+			int down = JOptionPane.showOptionDialog(null,
+					"Do you want " + cat + " to see what is in the hole or do something else?", cat, 0,
+					JOptionPane.INFORMATION_MESSAGE, null,
+					new String[] { "see what is in the hole!", "or find something better to do!!!" }, null);
+			if (down == 0) {
+				JOptionPane.showMessageDialog(null, cat + " looked down in to the hole and saw something shiny");
 
+				down = JOptionPane.showOptionDialog(null,
+						"Do you want " + cat + " to go down and see what is or do something else?", cat, 0,
+						JOptionPane.INFORMATION_MESSAGE, null,
+						new String[] { "I will go see what is in the hole!!", "find somthing else this is boring!!!" },
+						null);
+				if (down == 0) {JOptionPane.showMessageDialog(null, cat + " jumped down into the hole and looked at the shiny thing it was a ring" + cat + "picked up the ring and jumped back up and went home");
+					
+				}
 
-		
-		
-		
-		
+			}
+		}
 
 	}
 }
