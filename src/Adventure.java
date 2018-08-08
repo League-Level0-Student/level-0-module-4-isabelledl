@@ -35,16 +35,18 @@ public class Adventure {
 						"Ooh when your owner named Ray came home he was so mad that he put out side for 1 day did you really have to do that.");
 			}
 		} else if (where == 1) {
-			JOptionPane.showMessageDialog(null, cat + " walked inside and saw your owner Ray looking at the TV");
+			JOptionPane.showMessageDialog(null, cat + " walked inside and saw your owner looking at the TV");
 			int something = JOptionPane.showOptionDialog(null,
-					"Do you want " + cat + " to see what Ray is doing or go find something better to do? ", cat, 0,
+					"Do you want " + cat + " to see what your owner is doing or go find something better to do? ", cat, 0,
 					JOptionPane.INFORMATION_MESSAGE, null,
-					new String[] { "find something better to do I don't care what Ray dose", "see what Ray is doing" },
+					new String[] { "find something better to do I don't care what my owner dose", "see what my owner is doing" },
 					null);
 			if (something == 0) {
 				JOptionPane.showMessageDialog(null, cat + " walked away and you saw the dog named Pi ");
 
-			}
+			}if (something ==1) { JOptionPane.showMessageDialog(null, cat+ " jumped ");
+				
+			
 			int dog = JOptionPane.showOptionDialog(null,
 					"Do you want " + cat + " to go play with Pi or go find your cat friends?", cat, 0,
 					JOptionPane.INFORMATION_MESSAGE, null,
@@ -56,7 +58,7 @@ public class Adventure {
 			} else if (dog == 1) {
 				JOptionPane.showMessageDialog(null, cat + " played with Pi for the rest of the day");
 			}
-
+			}
 		} else if (where == 3) {
 			JOptionPane.showMessageDialog(null, cat
 					+ " walked outside and saw a hole in the ground do you want to see what is in the hole or do something else?");
@@ -75,9 +77,14 @@ public class Adventure {
 				if (down == 0) {JOptionPane.showMessageDialog(null, cat + " jumped down into the hole and looked at the shiny thing it was a ring" + cat + "picked up the ring and jumped back up and went home");
 					
 				}
+					
+				}
+					
+				}
 
 			}
 		}
 
-	}
-}
+	
+ 
+ 
