@@ -37,28 +37,32 @@ public class Adventure {
 		} else if (where == 1) {
 			JOptionPane.showMessageDialog(null, cat + " walked inside and saw your owner looking at the TV");
 			int something = JOptionPane.showOptionDialog(null,
-					"Do you want " + cat + " to see what your owner is doing or go find something better to do? ", cat, 0,
-					JOptionPane.INFORMATION_MESSAGE, null,
-					new String[] { "find something better to do I don't care what my owner dose", "see what my owner is doing" },
+					"Do you want " + cat + " to see what your owner is doing or go find something better to do? ", cat,
+					0, JOptionPane.INFORMATION_MESSAGE, null,
+					new String[] { "find something better to do I don't care what my owner dose",
+							"see what my owner is doing" },
 					null);
 			if (something == 0) {
 				JOptionPane.showMessageDialog(null, cat + " walked away and you saw the dog named Pi ");
+				int dog = JOptionPane.showOptionDialog(null,
+						"Do you want " + cat + " to go play with Pi or go find your cat friends?", cat, 0,
+						JOptionPane.INFORMATION_MESSAGE, null,
+						new String[] { "Eew I hate dogs I will go find my friends", "I love dogs I will go play with Pi" },
+						null);
+				if (dog == 0) {
+					JOptionPane.showMessageDialog(null, cat
+							+ " walked outsid and jumped on to the roof and found you cat friends Facebook,Twiter,and Instagram");
+				} else if (dog == 1) {
+					JOptionPane.showMessageDialog(null, cat + " played with Pi for the rest of the day");
+				}
+			}
+			if (something == 1) {
+				JOptionPane.showMessageDialog(null,
+						cat + " looked at the TV to see what your owner is doing he was just watching a TV show " + cat
+								+ "just walked away to go take a nap");
+			}
 
-			}if (something ==1) { JOptionPane.showMessageDialog(null, cat+ " jumped ");
-				
 			
-			int dog = JOptionPane.showOptionDialog(null,
-					"Do you want " + cat + " to go play with Pi or go find your cat friends?", cat, 0,
-					JOptionPane.INFORMATION_MESSAGE, null,
-					new String[] { "Eew I hate dogs I will go find my friends", "I love dogs I will go play with Pi" },
-					null);
-			if (dog == 0) {
-				JOptionPane.showMessageDialog(null, cat
-						+ " walked outsid and jumped on to the roof and found you cat friends Facebook,Twiter,and Instagram");
-			} else if (dog == 1) {
-				JOptionPane.showMessageDialog(null, cat + " played with Pi for the rest of the day");
-			}
-			}
 		} else if (where == 3) {
 			JOptionPane.showMessageDialog(null, cat
 					+ " walked outside and saw a hole in the ground do you want to see what is in the hole or do something else?");
@@ -66,25 +70,28 @@ public class Adventure {
 					"Do you want " + cat + " to see what is in the hole or do something else?", cat, 0,
 					JOptionPane.INFORMATION_MESSAGE, null,
 					new String[] { "see what is in the hole!", "or find something better to do!!!" }, null);
-			if (down == 0) {
-				JOptionPane.showMessageDialog(null, cat + " looked down in to the hole and saw something shiny");
+			{
+				if (down == 0)
+					JOptionPane.showMessageDialog(null, cat + " looked down in to the hole and saw something shiny");
 
 				down = JOptionPane.showOptionDialog(null,
 						"Do you want " + cat + " to go down and see what is or do something else?", cat, 0,
 						JOptionPane.INFORMATION_MESSAGE, null,
 						new String[] { "I will go see what is in the hole!!", "find somthing else this is boring!!!" },
 						null);
-				if (down == 0) {JOptionPane.showMessageDialog(null, cat + " jumped down into the hole and looked at the shiny thing it was a ring" + cat + "picked up the ring and jumped back up and went home");
-					
-				}
-					
-				}
-					
+				if (down == 0) {
+					JOptionPane.showMessageDialog(null,
+							cat + " jumped down into the hole and looked at the shiny thing it was a toaster" + cat
+									+ " pet the toaster and jumped back up and went home");
+
+				} else if (down == 1) {
+					JOptionPane.showMessageDialog(null, cat + " walked back inside and ate some food");
+
 				}
 
 			}
+
 		}
 
-	
- 
- 
+	}
+}
