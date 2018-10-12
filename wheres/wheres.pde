@@ -13,9 +13,9 @@ void draw() {
        println("X:" + mouseX + " Y:" + mouseY); 
 
       // 7. If the mouse is on Waldo, print “Waldo found!”
-if (mouseY>1014) {
-    y=240; && mouseY<1030 
-
+if (mouseY>1014&& mouseY<1030&&mouseX>1033&&mouseX<1031) {
+    y=240; 
+playWoohoo();
   }
  
       // 8. If Waldo is found, also use the method below to play “Woohoo”
